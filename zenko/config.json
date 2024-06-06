@@ -3,19 +3,12 @@
   "listenOn": [],
   "replicationGroupId": "RG001",
   "restEndpoints": {
-    "localhost": {
-      "hostname": "localhost",
-      "port": 8000,
-      "ssl": false
-    }
+    "localhost": "us-east-1",
+    "127.0.0.1": "us-east-1",
+    "s3emi.devel.uz": "us-east-1"
   },
   "websiteEndpoints": [
-    "storage.201.uz",
-    "storage.farruxnet.uz",
-    "127.0.0.1:5000",
-    "127.0.0.1:8000",
-    "127.0.0.1",
-
+    "s3-website-us-east-1.amazonaws.com",
   ],
   "replicationEndpoints": [
     {
