@@ -1,6 +1,6 @@
 import boto3
 
-endpoint_url = 'http://localhost:8080'
+endpoint_url = 'http://storage.201.uz'
 
 access_key = 'accessKey'
 secret_key = 'verySecretKey'
