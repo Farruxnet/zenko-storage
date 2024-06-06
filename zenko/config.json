@@ -12,6 +12,9 @@
   "websiteEndpoints": [
     "storage.201.uz",
     "storage.farruxnet.uz",
+    "127.0.0.1:5000",
+    "127.0.0.1:8000",
+    "127.0.0.1",
 
   ],
   "replicationEndpoints": [
