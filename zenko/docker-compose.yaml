@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+
+  s3:
+    image: zenko/cloudserver
+    user: root
+    mem_limit: 12G
+#    restart: always
+    environment:
+      - TZ=Asia/Tashkent
+      - LOG_LEVEL=error
+      - REMOTE_MANAGEMENT_DISABLE=1
+      - S3BACKEND=file
+      - S3DATAPATH=~/storage/data
+    volumes:
+      - ./storage/s3_server:/storage
+      - ./conf:/usr/src/app/conf
+      - ./config.json:/usr/src/app/config.json
+    ports:
+      - "8080:8000"
